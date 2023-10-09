@@ -71,10 +71,18 @@ You can check the status of the services with the following command:
   sudo docker-compose ps 
   ```
 
+### Now we are going to configure authorization server keycloak, access this url
+
+```
+ http://localhost:8099
+ ```
+### Go to the clients menu and click on import client as in the image below
+
 ![keycloakclient](keycloakclient.png)
 
+#### Copy the configuration below
 
-            ```
+          ```
             {
               "clientId": "critical-data",
               "name": "",
@@ -179,6 +187,7 @@ You can check the status of the services with the following command:
             }
             ```
 
+#### Paste the config in the field as shown in the image below, save the configs like the image.
 ![importclient](importclient.png)
 
 
@@ -279,7 +288,7 @@ http://localhost:8067/
 
 ![mongoexpress](mongoexpress.png)
 
-## Gerando um score credit
+## Generating a credit score
 ##### In these resources it is possible to have a client's score point using the cpf, the service accesses base_a to calculate the factors together with the data from base_b:
 
 ```
@@ -289,17 +298,17 @@ http://localhost:8067/
         --data ''
 ```
 
-## Extração de dados da Base_B
+## Extracting data from Base_B
 
-### Para extração utilizamos duas possíveis abordagem, primeira através do envio de mensagen para um topico chamado "tp-score-data-lake" que poderá ser consumido qualquer um que se inscreva no topico.
-### Acessando a url
+### For extraction we use two possible approaches, first by sending a message to a topic called "tp-score-data-lake" which can be consumed by anyone who subscribes to the topic.
+### Accessing the url
 ```
 http://localhost:9021/
 ```
-#### va no menu clique em topics e selecione o topico tp-score-data-lake você verá a messagem da insert feito anteriormente na base_b
+#### Go to the menu, click on topics and select the topic tp-score-data-lake you will see the message from the insert made previously in base_b
 
 ![score-data-lake](score-data-lake.png)
 
-## Resolução do desafio a em design
-### Esse desenho resolve de forma completa toda as soluções exigidas no desafio
+## Solving the design challenge
+### This design completely solves all the solutions required in the challenge
 ![challengescore.drawio (1).png](challengescore.drawio%20%281%29.png)
