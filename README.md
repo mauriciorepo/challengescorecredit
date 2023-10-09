@@ -291,7 +291,7 @@ http://localhost:8067/
 
 ## Extração de dados da Base_B
 
-### Para extração utilizamos duas possíveis abordagem, primeira através do envio de mensagen para um topico chamado "tp-score_data-lake" que poderá ser consumido qualquer um que se inscreva no topico.
+### Para extração utilizamos duas possíveis abordagem, primeira através do envio de mensagen para um topico chamado "tp-score-data-lake" que poderá ser consumido qualquer um que se inscreva no topico.
 ### Acessando a url
 ```
 http://localhost:9021/
@@ -299,3 +299,7 @@ http://localhost:9021/
 #### va no menu clique em topics e selecione o topico tp-score-data-lake você verá a messagem da insert feito anteriormente na base_b
 
 ![score-data-lake](score-data-lake.png)
+
+## Resolução do desafio a em design
+### Esse desenho resolve de forma completa toda as soluções exigidas no desafio
+![challengescore.drawio (1).png](challengescore.drawio%20%281%29.png)
