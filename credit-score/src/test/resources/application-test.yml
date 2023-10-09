@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: score-credit
+  data:
+    mongodb:
+      port: 27017
+      database: score
+      host: localhost
+      auto-index-creation: true
+  jpa:
+    hibernate:
+      ddl-auto: create-drop

@@ -1,0 +1,34 @@
+critical-data:
+  client:
+    address:
+      url: http://localhost:8084/api/v1/users
+
+
+spring:
+  application:
+    name: score-credit
+  data:
+    mongodb:
+      uri: mongodb://admin:admin@localhost:27017/
+      port: 27017
+      authentication-database: admin
+      username: admin
+      password: admin
+      database: score
+      authentication-mechanism: SCRAM-SHA-256
+
+logging:
+  level:
+    org.springframework.data.mongodb.core.MongoTemplate: DEBUG
+
+server:
+  port: 8085
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+user:
+  access:
+    token: Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI3eHk4SHQ0elBIdHlhN21Id0RIbmk3SlM3bVNJT0NBWWM0cXJaX3FxaTFzIn0.eyJleHAiOjE2OTY4MDY0MzEsImlhdCI6MTY5Njc5OTIzMSwianRpIjoiOTZmYTA1ZDktYjM1YS00MTBmLThkMTgtMWJjMmFjOTljZjE4IiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDk5L3JlYWxtcy9tYXN0ZXIiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiYTAyNjRlMjMtNmNmMy00ZWJhLTliOWQtZmJjZDQxMWZkYjFlIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiY3JpdGljYWwtZGF0YSIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiLyoiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbImRlZmF1bHQtcm9sZXMtbWFzdGVyIiwib2ZmbGluZV9hY2Nlc3MiLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImNyaXRpY2FsLWRhdGEiOnsicm9sZXMiOlsidW1hX3Byb3RlY3Rpb24iXX0sImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoiZW1haWwgcHJvZmlsZSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiY2xpZW50SG9zdCI6IjE3Mi4yNS4wLjEiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJzZXJ2aWNlLWFjY291bnQtY3JpdGljYWwtZGF0YSIsImNsaWVudEFkZHJlc3MiOiIxNzIuMjUuMC4xIiwiY2xpZW50X2lkIjoiY3JpdGljYWwtZGF0YSJ9.W70-YV2AFwr9ook4QOByVwBscjYdRsI3p_TVDZTw4OCPQ9nsi9BkbuTHGyE9AtOfmd8JaQ9C-89D1PR-BTcs-hHtOvA2Arg-N6hmCDEHVZfaFrpUDIswn-IWwsw4uouoj9WicPnCaJC82nbQyVxzoDep8u-1Y8XaQYDZ66l55Q88OjfUAZgMSjvTKPiQcbK1ZjFAjXreF2-MRqq0ydLDsD7fVVlm1uKoNlBRN7-l_I8s3mlTd9e7ygxKAnINs5WT3MZCKj8A0Jtu2EO4yuWqhYych2iYWGyRxLh91LkhHjLc_nbrcKEpf3x0PO6ZZ3ZusXvUramCOzxj8f7qFX4hQw

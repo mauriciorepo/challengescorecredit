@@ -1,0 +1,30 @@
+server:
+  port: 8084
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/base_a
+    username: root
+    password: example
+  liquibase:
+    change-log: liquibase/master.xml
+  jpa:
+    generate-ddl: false
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8099/realms/master
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+        type:
+          descriptor:
+            sql:
+              BasicBinder: TRACE
+  properties:
+    hibernate:
+      show_sql: true
+      format_sql: true
+      use_sql_comments: true

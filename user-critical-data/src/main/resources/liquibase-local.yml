@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/base_a
+    username: root
+    password: example
+  liquibase:
+    change-log: liquibase/master.xml
+    default-schema: public
+    enable: true

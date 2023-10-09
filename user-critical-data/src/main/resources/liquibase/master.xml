@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <!-- Suas alterações aqui -->
+    <include file="liquibase/2023-10-04_create_user_table.sql"  relativeToChangelogFile="false"/>
+    <include file="liquibase/2023-10-04_create_debt_table.sql"  relativeToChangelogFile="false"/>
+    <include file="liquibase/2023-10-04_populate_user_table.sql"  relativeToChangelogFile="false"/>
+    <include file="liquibase/2023-10-04_populate_debt_table.sql"  relativeToChangelogFile="false"/>
+
+
+</databaseChangeLog>

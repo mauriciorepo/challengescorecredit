@@ -1,0 +1,16 @@
+{
+  "id": 2,
+  "cpf": "9876543210",
+  "name": "marcos ",
+  "address": "rua tal 432",
+  "list": [
+    {
+      "id": 2,
+      "debtDueDate": "2023-10-04T18:02:31.089",
+      "originalValue": 234.00,
+      "currentBalance": 300.00,
+      "typeOfDebt": "Emprestimo",
+      "debtStatus": "ativo"
+    }
+  ]
+}

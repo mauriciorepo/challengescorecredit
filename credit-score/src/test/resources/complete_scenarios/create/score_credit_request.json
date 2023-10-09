@@ -1,0 +1,19 @@
+{
+  "address": "456 Elm Street",
+  "source_of_income": "Business",
+  "cpf": "9876543223",
+  "assets": [
+    {
+      "description": "Motorcycle",
+      "type": "Vehicle",
+      "value": 8000.00,
+      "purchase_date": "2021-03-10T00:00:00Z"
+    },
+    {
+      "description": "Apartment",
+      "type": "Real Estate",
+      "value": 500000.00,
+      "purchase_date":"2021-03-10T00:00:00Z"
+    }
+  ]
+}

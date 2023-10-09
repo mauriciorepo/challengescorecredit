@@ -1,0 +1,12 @@
+version: "3.5"
+services:
+  postgres:
+    image: postgres:latest
+    container_name: postgres_base_a
+    environment:
+      POSTGRES_DB: base_a
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: example
+      PG_DATA: /data/postgres
+    ports:
+      - "5432:5432"
