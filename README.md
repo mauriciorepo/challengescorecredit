@@ -249,7 +249,7 @@ curl --location 'localhost:8084/api/v1/users/98765432101/find' \
                }  
       ```
 ## Starting Score Credit
-###  Let's now upload the Score Credit service, we can use this maven command:
+###  Let's now up the Score Credit service, we can use this maven command:
 
 ```
 mvn spring-boot:run
